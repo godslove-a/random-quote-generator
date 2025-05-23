@@ -8,7 +8,7 @@ button.addEventListener("click", () => {
     quoteText.textContent = "";
     quoteAuthor.textContent = "";
     
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
     .then(response => {
         if (!response.ok) {
             throw new Error("Failed to fetch quote");
